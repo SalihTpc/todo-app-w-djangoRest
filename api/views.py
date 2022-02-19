@@ -1,11 +1,13 @@
 from urllib import response
 from django.shortcuts import render
-from django.http import JsonResponse
+from django.http import HttpResponse, JsonResponse
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from .serializers import TaskSerializer
 from .models import Task
 
+def HomeView(request):
+    return HttpResponse("<h1>This server for todo-App</h1>")
 
 @api_view(['GET'])
 def apiOverView(request):
