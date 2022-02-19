@@ -7,7 +7,7 @@ from .serializers import TaskSerializer
 from .models import Task
 
 def HomeView(request):
-    return HttpResponse("<h1>This server for todo-App</h1>")
+    return HttpResponse("<h1>This server for Personel todo-App</h1>")
 
 @api_view(['GET'])
 def apiOverView(request):
